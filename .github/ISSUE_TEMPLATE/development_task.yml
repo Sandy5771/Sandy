@@ -1,0 +1,35 @@
+---
+name: Development task
+description: Track one incremental Sandy development task
+title: "[Task] "
+labels: [task]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should this task accomplish?
+    validations:
+      required: true
+  - type: textarea
+    id: work_items
+    attributes:
+      label: Work items
+      description: Concrete implementation steps.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know this task is complete?
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Tests and checks
+      description: Commands or manual checks required before closing.
+    validations:
+      required: false
+---
